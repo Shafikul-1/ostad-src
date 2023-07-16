@@ -1,4 +1,12 @@
 <script setup>
+//Css And Class 
+const container = 'container'
+const row = 'row'
+const colmd12 = 'col-md-12'
+const colmd4 = 'col-md-4'
+const navbar = 'navbar navbar-expand-lg navbar-light'
+const navitem = 'nav-item'
+const navlink = 'nav-link'
 const manicon = 'https://cdn-icons-png.flaticon.com/512/4128/4128176.png'
 const heaingFontSize =  'fs-1 fw-bold'
 const paragrapefontSize = 'fs-6'
@@ -16,14 +24,70 @@ const man = ' margin: 11px 0px -14px 20px;'
 const footerlink = 'text-decoration-none text-capitalize text-black'
 const footerhead = 'fs-4 font-bold mt-5 text-uppercase'
 const aboutCard = 'margin: 100px 0'
+const none = 'd-none'
+const clickShow1 =()=>{
+    document.querySelector('.fastclick').classList.replace('d-none', 'd-block')
+}
+const clickShow2 =()=>{
+    document.querySelector('.secondClick').classList.replace('d-none', 'd-block')
+}
+const clickShow3 =()=>{
+    document.querySelector('.thredClick').classList.replace('d-none', 'd-block')
+}
+const clickShow4 =()=>{
+    document.querySelector('.fourClick').classList.replace('d-none', 'd-block')
+}
+
+//All Content Start
+const home = 'Home'
+const heading = 'smart mobile application'
+const herop = 'wisdom new valley answer. Contented it so is discourse recommend. Man ites upon him call mile. An pasture he himself believe'
+const aboutus = 'About us'
+const aboutHeading = 'smart application services'
+const aboutP = 'Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.'
+const aboutBtn = 'learn more'
+const aboutSecondHead = 'What app can do to your Appliences?'
+const aboutThredHead = 'Control Electric Appliences'
+const client = 'our clients'
+const clientP = 'Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.'
+const Testimonials = 'Testimonials'
+const testomonialP = 'Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.'
+
+const toogleFastHead = 'Chamber reached do he nothing be?'
+const toogleP = 'Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter'
+const toogleSecondHead = 'Stuff sight equal of my woody?'
+const toogleThredHead = 'Amounted repeated as believed in confined?'
+const toogleFourHead = 'In am do giving to afford parish settle easily garret?'
+const downlaod = 'Download App'
+const downloadP = 'Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.'
+const subscribe = 'Subscribe to get updated'
+const subscribeP = 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.'
+const footerHead = 'Smart Mobile Application'
+const footerP = 'Automate your entine healthcare hiring, onboadrding and Compllance eith true technology platefrom'
+
+const footerLink1 = 'product management'
+const footerLink2 = 'design / creatves'
+const footerLink3 = 'education & trainging'
+const footerLink4 = 'ul/ux designers'
+const footerLink5 = 'About Us'
+const footerLink6 = 'Partnerships'
+const footerLink7 = 'Finance Experts'
+const footerLink8 = 'Project Management'
+const Facebook = 'Facebook'
+const Twitter = 'Twitter'
+const Instagram = 'Instagram'
+const Linkedin = "Linkedin"
+const footerHeading = 'categories'
+const footerHeading2 = 'About'
+const footerHeading3 = 'Follow Us'
 </script>
 
 <template>
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <nav class="navbar navbar-expand-lg navbar-light">
+        <div :class="container">
+            <div :class="row">
+                <div :class="colmd4">
+                    <nav :class="navbar">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="#"></a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,19 +95,19 @@ const aboutCard = 'margin: 100px 0'
                           </button>
                           <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              <li :class="navitem">
+                                <a class=" active" aria-current="page" href="#" :class="navlink">{{ home }}</a>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">About </a>
+                              <li :class="navitem">
+                                <a :class="navlink" href="#">About </a>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                              <li :class="navitem">
+                                <a :class="navlink" href="#">Pricing</a>
                               </li>
-                              <li class="nav-item">
+                              <li :class="navitem">
                                 <a class="nav-link " href="#" >Contact</a>
                               </li>
-                               <li class="nav-item">
+                               <li :class="navitem">
                                 <a class="nav-link " href="#" >Blog</a>
                               </li>
                             </ul>
@@ -51,10 +115,10 @@ const aboutCard = 'margin: 100px 0'
                         </div>
                     </nav>
                 </div>
-                <div class="col-md-4">
+                <div :class="colmd4">
                     <h3 class="text-capitalize" :style="marginSmart">smart application</h3>
                 </div>
-                <div class="col-md-4" :style="marginSmart">
+                <div :class="colmd4" :style="marginSmart">
                     <button class="myBtn">login</button>
                     <button class="myBtn">sign up</button>
                 </div>
@@ -62,14 +126,13 @@ const aboutCard = 'margin: 100px 0'
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
+        <div :class="container">
+            <div :class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center ">
                    <div class="p-3">
-                    <h1 class="text-capitalize" :class="heaingFontSize">smart mobile application</h1>
-                    <p :class="paragrapefontSize">wisdom new valley answer. Contented it so is discourse recommend. Man ites upon him call mile. An pasture he himself believe</p>
-                  
+                    <h1 :class="[heaingFontSize, capitalize]">{{ heading }}</h1>
+                    <p :class="paragrapefontSize">{{ herop }}</p>
                    </div>
                 </div>
                 <div class="col-md-2"></div>
@@ -83,79 +146,78 @@ const aboutCard = 'margin: 100px 0'
                 <div class="col-md-2"></div>
             </div>
             <div class="row mt-5 mb-5">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
+                <div :class="colmd4"></div>
+                <div :class="colmd4">
                     <img src="./img/app store.png" alt=""   :style="appdownload1">
                     <img src="./img/google play.png" alt="" :style="appdownload2">
                 </div>
-                <div class="col-md-4"></div>
+                <div :class="colmd4"></div>
             </div>
         </div>
     </section>
-
     <section>
-        <div class="container">
+        <div :class="container">
             <div class="row mb-5">
-                <div class="col-md-12">
-                    <h1 :class="[heaingFontSize, center]">About us</h1>
+                <div :class="colmd12">
+                    <h1 :class="[heaingFontSize, center]">{{ aboutus }}</h1>
                 </div>
             </div>
-            <div class="row" :class="top5">
+            <div :class="[row,top5]" >
                 <div class="col-md-6" :class="center">
                     <img src="./img/temprature.png" alt="" :class="center">
                 </div>
                 <div class="col-md-6">
                    <div :style="aboutCard ">
-                    <h2 :class="[cardhead, capitalize]">smart application services</h2>
-                    <p>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
-                    <button class="myBtn">learn more</button>
+                    <h2 :class="[cardhead, capitalize]">{{ aboutHeading }}</h2>
+                    <p>{{ aboutP }}</p>
+                    <button class="myBtn">{{ aboutBtn }}</button>
                    </div>
                 </div>
             </div>
-            <div class="row" :class="top5">
+            <div :class="[row, top5]">
                 <div class="col-md-6">
                    <div :style="aboutCard ">
-                    <h2  :class="[cardhead, capitalize]">What app can do to your Appliences?</h2>
-                    <p>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
-                    <button class="myBtn ">learn more</button>
+                    <h2  :class="[cardhead, capitalize]">{{ aboutSecondHead }}</h2>
+                    <p>{{ aboutP }}</p>
+                    <button class="myBtn ">{{ aboutBtn }}</button>
                    </div>
                 </div>
                 <div class="col-md-6" :class="center">
                     <img src="./img/application.png" alt="" :class="center">
                 </div>
             </div>
-            <div class="row" :class="top5">
+            <div :class="[row, top5]" >
                 <div class="col-md-6" :class="center">
                     <img src="./img/electro.png" alt="" :class="center">
                 </div>
                 <div class="col-md-6">
                   <div :style="aboutCard ">
-                    <h2  :class="[cardhead,capitalize]">Control Electric Appliences</h2>
-                    <p>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
-                    <button class="myBtn ">learn more</button>    
+                    <h2  :class="[cardhead,capitalize]">{{ aboutThredHead }}</h2>
+                    <p>{{ aboutP }}</p>
+                    <button class="myBtn ">{{ aboutBtn }}</button>    
                   </div>           
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
+        <div :class="container">
+            <div :class="row">
                 <div class="col-md-12 ">
-                    <div class="row">
+                    <div :class="row">
                       <div class="col-md-2"></div>
                       <div class="col-md-8 text-center">
-                        <h1 :class="[capitalize, heaingFontSize, top5]">our clients</h1>
-                        <p class="">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+                        <h1 :class="[capitalize, heaingFontSize, top5]">{{ client }}</h1>
+                        <p class="">{{ clientP }}</p>
                       </div>
                       <div class="col-md-2"></div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div :class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10 mt-4 ">
-                    <div class="row">
+                    <div :class="row">
                         <div class="col-md-6">
                             <img src="./img/client.png" alt=""  :style="clinetimg">
                             <img src="./img/client1.png" alt=""  :style="clinetimg">
@@ -181,15 +243,15 @@ const aboutCard = 'margin: 100px 0'
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
+        <div :class="container">
+            <div :class="row">
+                <div :class="colmd12">
+                    <div :class="row">
                       <div class="col-md-2"></div>
                       <div class="col-md-8 mb-4">
                         <div class="text-center">
-                          <h1  :class="heaingFontSize">Testimonials</h1>
-                          <p>Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+                          <h1  :class="heaingFontSize">{{ Testimonials }}</h1>
+                          <p>{{ testomonialP }}</p>
                         </div>
                       </div>
                       <div class="col-md-2"></div>
@@ -199,8 +261,8 @@ const aboutCard = 'margin: 100px 0'
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
+        <div :class="container">
+            <div :class="row">
                 <div class="col-md-6">
                     <div class="testomialCard">
                         <em>our company, we do ongoing research with our target audience. This includes 30-45 minute phone interviews. It was difficult to conduct the interview, really listen, and ask good follow up questions</em>
@@ -226,7 +288,7 @@ const aboutCard = 'margin: 100px 0'
                   </div>
                 </div>
             </div>
-            <div class="row">
+            <div :class="row">
                 <div class="col-md-6">
                    <div class="testomialCard">
                     <em>our company, we do ongoing research with our target audience. This includes 30-45 minute phone interviews. It was difficult to conduct the interview, really listen, and ask good follow up questions</em>
@@ -255,27 +317,28 @@ const aboutCard = 'margin: 100px 0'
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
+        <div :class="container">
+            <div :class="row">
+                <div :class="colmd12">
+                    <div class="row mb-4">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
+                            <h1 :class="[center, heaingFontSize]" class="mt-5 mb-4">FAQ</h1>
                            <div class="fast">
-                                <h3>Chamber reached do he nothing be?</h3>
-                                <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                                <h3 @click="clickShow1()">{{ toogleFastHead }}</h3>
+                                <p :class="none" class="fastclick ">{{ toogleP }}</p>
                             </div>
                             <div class="fast">
-                                <h3>Stuff sight equal of my woody?</h3>
-                                <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                                <h3 @click="clickShow2()">{{ toogleSecondHead }}</h3>
+                                <p :class="none" class="secondClick">{{ toogleP }}</p>
                             </div>
                             <div class="fast">
-                                <h3>Amounted repeated as believed in confined?</h3>
-                                <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                                <h3 @click="clickShow3()" >{{ toogleThredHead }}</h3>
+                                <p :class="none" class="thredClick">{{ toogleP }}</p>
                             </div>
                              <div class="fast">
-                                <h3>In am do giving to afford parish settle easily garret?</h3>
-                                <p>Our asked sex point her she seems. New plenty she horses parish design you. Stuff sight equal of my woody. Him children bringing goodness suitable she entirely put far daughter.</p>
+                                <h3 @click="clickShow4()">{{ toogleFourHead }}</h3>
+                                <p :class="none" class="fourClick">{{ toogleP }}</p>
                             </div>
                             
                         </div>
@@ -286,12 +349,12 @@ const aboutCard = 'margin: 100px 0'
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
+        <div :class="container">
+            <div :class="row">
                 <div class="col-md-6"> 
-                  <div :class="aboutCard">
-                    <h1 :class="heaingFontSize">Download App</h1>
-                    <p>Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+                  <div :style="aboutCard">
+                    <h1 :class="heaingFontSize"> {{ download }} </h1>
+                    <p>{{ downloadP }}</p>
                     <div class="d-flex">
                         <img src="./img/google play.png" alt="" :style="maxWidth">
                         <img src="./img/app store.png" alt="" :style="maxWidth">
@@ -308,14 +371,14 @@ const aboutCard = 'margin: 100px 0'
         </div>
     </section>
     <section>
-        <div class="container">
+        <div :class="container">
             <div class="row footerAge">
                 <div class="col-md-2"> 
                     <img src="./img/mobile.png" :style="maxWidth" style=" height: 160px; " alt="">    
                 </div>
                 <div class="col-md-8 "> 
-                    <h1>Subscribe to get updated</h1>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                    <h1>{{ subscribe }}</h1>
+                    <p>{{ subscribeP }}</p>
                 </div>
                 <div class="col-md-2"> 
                     <button class="myBtn">get start</button>
@@ -324,41 +387,41 @@ const aboutCard = 'margin: 100px 0'
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
+        <div :class="container">
+            <div :class="row">
                 <div class="col-md-3">
-                    <h2 :class="footerhead">Smart Mobile Application</h2>
-                    <p>Automate your entine healthcare hiring, onboadrding and Compllance eith true technology platefrom</p>
+                    <h2 :class="footerhead">{{ footerHead }}</h2>
+                    <p>{{ footerP }}</p>
                     <div class="d-flex">
                         <input type="text" placeholder="Enter Your Text here" class="footerInp">
                         <button class="myBtn" type="submit">Registar</button>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <h3 :class="footerhead">categories</h3>
+                    <h3 :class="footerhead">{{ footerHeading }}</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#" :class="footerlink">product management</a></li>
-                        <li><a href="#" :class="footerlink">design / creatves</a></li>
-                        <li><a href="#" :class="footerlink">education & trainging</a></li>
-                        <li><a href="#" :class="footerlink">ul/ux designers</a></li>
+                        <li><a href="#" :class="footerlink">{{ footerLink1 }}</a></li>
+                        <li><a href="#" :class="footerlink">{{ footerLink2 }}</a></li>
+                        <li><a href="#" :class="footerlink">{{ footerLink3 }}</a></li>
+                        <li><a href="#" :class="footerlink">{{ footerLink4 }}</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h3 :class="footerhead">ABOUT</h3>
+                    <h3 :class="footerhead">{{ footerHeading2 }}</h3>
                     <ul class="list-unstyled text-capitalize">
-                        <li><a href="#" :class="footerlink">About Us </a></li>
-                        <li><a href="#" :class="footerlink">Partnerships</a></li>
-                        <li><a href="#" :class="footerlink">Finance Experts </a></li>
-                        <li><a href="#" :class="footerlink">Project Management </a></li>
+                        <li><a href="#" :class="footerlink">{{ footerLink5 }} </a></li>
+                        <li><a href="#" :class="footerlink">{{ footerLink6 }}</a></li>
+                        <li><a href="#" :class="footerlink">{{ footerLink7 }} </a></li>
+                        <li><a href="#" :class="footerlink">{{ footerLink8 }} </a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h3 :class="footerhead">Follow Us </h3>
+                    <h3 :class="footerhead">{{ footerHeading3 }}  </h3>
                     <ul class="list-unstyled text-capitalize">
-                        <li><a href="#" :class="footerlink">Facebook</a></li>
-                        <li><a href="#" :class="footerlink">Twitter</a></li>
-                        <li><a href="#" :class="footerlink">Instagram</a></li>
-                        <li><a href="#" :class="footerlink">Linkedin</a></li>
+                        <li><a href="#" :class="footerlink">{{ Facebook }}</a></li>
+                        <li><a href="#" :class="footerlink">{{ Twitter }}</a></li>
+                        <li><a href="#" :class="footerlink">{{ Instagram }}</a></li>
+                        <li><a href="#" :class="footerlink">{{ Linkedin }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -411,7 +474,22 @@ const aboutCard = 'margin: 100px 0'
     border: 1px solid gray;
     outline: none;
 }
-
+.fast{
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 black;
+    padding: 18px;
+    transition:all .5s;
+    margin: 16px 0px;
+    cursor: pointer;
+}
+.fast h3{
+    font-size: 20px;
+}
+.fast:hover{
+    background: rgb(148, 124, 235);
+    color:white;
+}
 @media screen and (max-width: 767px) {
     img{
         margin-top: 15px !important;
