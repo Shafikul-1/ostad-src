@@ -9,10 +9,13 @@
     import faq from './components/faq.vue'
     import mobile from './components/mobile.vue';
     import subscribe from './components/subscribe.vue'
-    import footer from './components/footer.vue'
+    import foter from './components/foter.vue'
+    // import footer from './components/footer.vue'
+
 </script>
 
 <template>
+
     <navbar/>
     <secondpart/>
     <about/>
@@ -24,8 +27,8 @@
     <mobile/>
     <br/>
     <subscribe/>
-    <footer/>
-    <br/><br/>
+    <foter/>
+
 </template>
 
 <style scoped>
