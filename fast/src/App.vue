@@ -86,6 +86,7 @@ const footerHeading3 = 'Follow Us'
 const testomonialP2 = 'our company, we do ongoing research with our target audience. This includes 30-45 minute phone interviews. It was difficult to conduct the interview, really listen, and ask good follow up questions'
 const testomonialManInfo = 'Product designer - Besnik'
 const testomnialManName = 'Custom IT Solutions Firm'
+const application = 'smart application'
 
 const carosulP = 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.'
 const carouslFastHead = 'Grow Your Business'
@@ -132,16 +133,17 @@ const appImg = 'https://github.com/Shafikul-1/ostad-src/blob/fast-project/fast/s
                     </nav>
                 </div>
                 <div :class="colmd4">
-                    <h3 :class="capitalize" :style="marginSmart">smart application</h3>
+                    <h3 :class="capitalize" :style="marginSmart">{{application}}</h3>
                 </div>
                 <div :class="colmd4" :style="marginSmart">
-                    <button class="myBtn">login</button>
+                    <button class="myBtn" >login</button>
                     <button class="myBtn">sign up</button>
                 </div>
             </div>
         </div>
     </section>
     <section>
+        <a href=""></a>
         <div :class="container">
             <div :class="row">
                 <div :class="colmd2"></div>
