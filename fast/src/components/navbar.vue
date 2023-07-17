@@ -4,6 +4,7 @@ const navitem = 'nav-item'
 const navlink = 'nav-link'
 const application = 'smart application'
 const marginSmart = 'margin : 12px 0 0 0'
+const home = 'Home'
 
 const container = 'container'
 const row = 'row'
