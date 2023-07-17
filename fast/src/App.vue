@@ -4,6 +4,9 @@ const container = 'container'
 const row = 'row'
 const colmd12 = 'col-md-12'
 const colmd4 = 'col-md-4'
+const colmd2 = 'col-md-2'
+const colmd8 = 'col-md-8'
+const colmd6 = 'col-md-6'
 const navbar = 'navbar navbar-expand-lg navbar-light'
 const navitem = 'nav-item'
 const navlink = 'nav-link'
@@ -58,7 +61,7 @@ const toogleP = 'Our asked sex point her she seems. New plenty she horses parish
 const toogleSecondHead = 'Stuff sight equal of my woody?'
 const toogleThredHead = 'Amounted repeated as believed in confined?'
 const toogleFourHead = 'In am do giving to afford parish settle easily garret?'
-const downlaod = 'Download App'
+const download = 'Download App'
 const downloadP = 'Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.'
 const subscribe = 'Subscribe to get updated'
 const subscribeP = 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.'
@@ -80,6 +83,19 @@ const Linkedin = "Linkedin"
 const footerHeading = 'categories'
 const footerHeading2 = 'About'
 const footerHeading3 = 'Follow Us'
+const testomonialP2 = 'our company, we do ongoing research with our target audience. This includes 30-45 minute phone interviews. It was difficult to conduct the interview, really listen, and ask good follow up questions'
+const testomonialManInfo = 'Product designer - Besnik'
+const testomnialManName = 'Custom IT Solutions Firm'
+
+const carosulP = 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.'
+const carouslFastHead = 'Grow Your Business'
+const carouslSecondHead = 'Build Products'
+const carouslThredHead = 'Success Every Day'
+const carosulFourHead = 'Bring Ideas to Life'
+
+const businessImg = 'https://preview.colorlib.com/theme/launch/images/dashboard.jpg'
+const googleimg = 'https://github.com/Shafikul-1/ostad-src/blob/fast-project/fast/src/img/google%20play.png?raw=true'
+const appImg = 'https://github.com/Shafikul-1/ostad-src/blob/fast-project/fast/src/img/app%20store.png?raw=true'
 </script>
 
 <template>
@@ -116,7 +132,7 @@ const footerHeading3 = 'Follow Us'
                     </nav>
                 </div>
                 <div :class="colmd4">
-                    <h3 class="text-capitalize" :style="marginSmart">smart application</h3>
+                    <h3 :class="capitalize" :style="marginSmart">smart application</h3>
                 </div>
                 <div :class="colmd4" :style="marginSmart">
                     <button class="myBtn">login</button>
@@ -128,28 +144,28 @@ const footerHeading3 = 'Follow Us'
     <section>
         <div :class="container">
             <div :class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center ">
+                <div :class="colmd2"></div>
+                <div :class="colmd8">
                    <div class="p-3">
                     <h1 :class="[heaingFontSize, capitalize]">{{ heading }}</h1>
                     <p :class="paragrapefontSize">{{ herop }}</p>
                    </div>
                 </div>
-                <div class="col-md-2"></div>
+                <div :class="colmd2"></div>
                 
-                <div class="col-md-2"></div>
-                <div class="col-md-8" :class="center">
+                <div :class="colmd2"></div>
+                <div :class="[colmd8, center]" >
                     <img src="./img/fast.png" alt="" class="m-2" :style="maxWidth">
                     <img src="./img/seconf.png" alt="" class="m-2" :style="maxWidth">
                     <img src="./img/threed.png" alt="" class="m-2" :style="maxWidth">
                 </div>
-                <div class="col-md-2"></div>
+                <div :class="colmd2"></div>
             </div>
-            <div class="row mt-5 mb-5">
+            <div :class="row" class="mt-5 mb-5">
                 <div :class="colmd4"></div>
                 <div :class="colmd4">
-                    <img src="./img/app store.png" alt=""   :style="appdownload1">
-                    <img src="./img/google play.png" alt="" :style="appdownload2">
+                    <img :src="googleimg" alt=""   :style="appdownload1">
+                    <img :src="appImg" alt="" :style="appdownload2">
                 </div>
                 <div :class="colmd4"></div>
             </div>
@@ -163,10 +179,10 @@ const footerHeading3 = 'Follow Us'
                 </div>
             </div>
             <div :class="[row,top5]" >
-                <div class="col-md-6" :class="center">
+                <div :class="[colmd6, center]" >
                     <img src="./img/temprature.png" alt="" :class="center">
                 </div>
-                <div class="col-md-6">
+                <div :class="colmd6">
                    <div :style="aboutCard ">
                     <h2 :class="[cardhead, capitalize]">{{ aboutHeading }}</h2>
                     <p>{{ aboutP }}</p>
@@ -175,22 +191,22 @@ const footerHeading3 = 'Follow Us'
                 </div>
             </div>
             <div :class="[row, top5]">
-                <div class="col-md-6">
+                <div :class="colmd6">
                    <div :style="aboutCard ">
                     <h2  :class="[cardhead, capitalize]">{{ aboutSecondHead }}</h2>
                     <p>{{ aboutP }}</p>
                     <button class="myBtn ">{{ aboutBtn }}</button>
                    </div>
                 </div>
-                <div class="col-md-6" :class="center">
+                <div :class="[colmd6, center]" >
                     <img src="./img/application.png" alt="" :class="center">
                 </div>
             </div>
             <div :class="[row, top5]" >
-                <div class="col-md-6" :class="center">
+                <div :class="[colmd6, center]">
                     <img src="./img/electro.png" alt="" :class="center">
                 </div>
-                <div class="col-md-6">
+                <div :class="colmd6">
                   <div :style="aboutCard ">
                     <h2  :class="[cardhead,capitalize]">{{ aboutThredHead }}</h2>
                     <p>{{ aboutP }}</p>
@@ -205,12 +221,12 @@ const footerHeading3 = 'Follow Us'
             <div :class="row">
                 <div class="col-md-12 ">
                     <div :class="row">
-                      <div class="col-md-2"></div>
+                      <div :class="colmd2"></div>
                       <div class="col-md-8 text-center">
                         <h1 :class="[capitalize, heaingFontSize, top5]">{{ client }}</h1>
                         <p class="">{{ clientP }}</p>
                       </div>
-                      <div class="col-md-2"></div>
+                      <div :class="colmd2"></div>
                     </div>
                 </div>
             </div>
@@ -218,21 +234,21 @@ const footerHeading3 = 'Follow Us'
                 <div class="col-md-1"></div>
                 <div class="col-md-10 mt-4 ">
                     <div :class="row">
-                        <div class="col-md-6">
+                        <div :class="colmd6">
                             <img src="./img/client.png" alt=""  :style="clinetimg">
                             <img src="./img/client1.png" alt=""  :style="clinetimg">
                         </div>
-                        <div class="col-md-6">
+                        <div :class="colmd6">
                             <img src="./img/client2.png" alt=""  :style="clinetimg">
                             <img src="./img/client3.png" alt=""  :style="clinetimg">
                         </div>
                     </div>
                     <div class="row mt-4 mb-5">
-                        <div class="col-md-6">
+                        <div :class="colmd6">
                           <img src="./img/client4.png" alt=""  :style="clinetimg">
                           <img src="./img/client5.png" alt=""  :style="clinetimg">
                         </div>
-                        <div class="col-md-6">
+                        <div :class="colmd6">
                           <img src="./img/client6.png" alt=""  :style="clinetimg">
                           <img src="./img/client7.png" alt=""  :style="clinetimg">
                         </div>
@@ -247,14 +263,14 @@ const footerHeading3 = 'Follow Us'
             <div :class="row">
                 <div :class="colmd12">
                     <div :class="row">
-                      <div class="col-md-2"></div>
+                      <div :class="colmd2"></div>
                       <div class="col-md-8 mb-4">
                         <div class="text-center">
                           <h1  :class="heaingFontSize">{{ Testimonials }}</h1>
                           <p>{{ testomonialP }}</p>
                         </div>
                       </div>
-                      <div class="col-md-2"></div>
+                      <div :class="colmd2"></div>
                     </div>
                 </div>
             </div>
@@ -263,52 +279,87 @@ const footerHeading3 = 'Follow Us'
     <section>
         <div :class="container">
             <div :class="row">
-                <div class="col-md-6">
+                <div :class="colmd6"> 
+                   <div class="post">
+                    <div class="carosulimgal">
+                        <img class="fastimg" :class="[fastimg]" :style="maxWidth" :src="businessImg"  alt="">
+                        <!-- <img class="fastimg" :class="[fastimg]" :style="maxWidth" :src="businessImg"  alt="">
+                        <img class="fastimg" :class="[fastimg]" :style="maxWidth" :src="businessImg"  alt="">
+                        <img class="fastimg" :class="[fastimg]" :style="maxWidth" :src="businessImg"  alt=""> -->
+                    </div>
+                   </div>
+                </div>
+                <div :class="colmd6"> 
+                    <div class="carosul">
+                        <h4>{{ carouslFastHead }}</h4>
+                        <p>{{ carosulP }}</p>
+                    </div>
+                     <div class="carosul">
+                        <h4>{{ carouslSecondHead }}</h4>
+                        <p>{{ carosulP }}</p>
+                    </div>
+                       <div class="carosul">
+                        <h4>{{ carouslThredHead }}</h4>
+                        <p>{{ carosulP }}</p>
+                    </div>
+                       <div class="carosul">
+                        <h4>{{ carosulFourHead }}</h4>
+                        <p>{{ carosulP }}</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div :class="container">
+            <div :class="row">
+                <div :class="colmd6">
                     <div class="testomialCard">
-                        <em>our company, we do ongoing research with our target audience. This includes 30-45 minute phone interviews. It was difficult to conduct the interview, really listen, and ask good follow up questions</em>
+                        <em>{{ testomonialP2 }}</em>
                         <div class="d-flex">
                             <img :src="manicon" alt="man" :style="testomonialicon" style="">
                             <div :style="man">
-                                <h5 class="text-capitalize">cham</h5>
-                                <p>Product designer - Besnik</p>
+                                <h5 :class="capitalize">{{ testomnialManName }}</h5>
+                                <p>{{ testomonialManInfo }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div :class="colmd6">
                   <div class="testomialCard">
-                    <em>We meet new clients and more often than not establish long-term business relationships, all through Guru. The flexibility in how projects can be structured</em>
+                    <em>{{ testomonialP2 }}</em>
                     <div class="d-flex">
                         <img :src="manicon" alt="man" :style="testomonialicon"  >
                         <div :style="man">
-                            <h5 class="text-capitalize">Scopic Software</h5>
-                            <p>Custom IT Solutions Firm</p>
+                            <h5 :class="capitalize">{{ testomnialManName }}</h5>
+                            <p>{{ testomonialManInfo }}</p>
                         </div>
                     </div>
                   </div>
                 </div>
             </div>
             <div :class="row">
-                <div class="col-md-6">
+                <div :class="colmd6">
                    <div class="testomialCard">
-                    <em>our company, we do ongoing research with our target audience. This includes 30-45 minute phone interviews. It was difficult to conduct the interview, really listen, and ask good follow up questions</em>
+                    <em>{{ testomonialP2 }}</em>
                     <div class="d-flex">
                         <img :src="manicon" alt="man" :style="testomonialicon" >
                         <div :style="man">
-                            <h5 class="text-capitalize">cham</h5>
-                            <p>Product designer - Besnik</p>
+                            <h5 :class="capitalize">{{ testomnialManName }}</h5>
+                            <p>{{ testomonialManInfo }}</p>
                         </div>
                     </div>
                    </div>
                 </div>
-                <div class="col-md-6">
+                <div :class="colmd6">
                    <div class="testomialCard">
-                    <em>We meet new clients and more often than not establish long-term business relationships, all through Guru. The flexibility in how projects can be structured</em>
+                    <em>{{ testomonialP2 }}</em>
                     <div class="d-flex">
                         <img :src="manicon" alt="man" :style="testomonialicon" >
                         <div :style="man">
-                            <h5 class="text-capitalize">Scopic Software</h5>
-                            <p>Custom IT Solutions Firm</p>
+                            <h5 :class="capitalize">{{ testomnialManName }}</h5>
+                            <p>{{ testomonialManInfo }}</p>
                         </div>
                     </div>
                    </div>
@@ -321,8 +372,8 @@ const footerHeading3 = 'Follow Us'
             <div :class="row">
                 <div :class="colmd12">
                     <div class="row mb-4">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
+                        <div :class="colmd2"></div>
+                        <div :class="colmd8">
                             <h1 :class="[center, heaingFontSize]" class="mt-5 mb-4">FAQ</h1>
                            <div class="fast">
                                 <h3 @click="clickShow1()">{{ toogleFastHead }}</h3>
@@ -342,7 +393,7 @@ const footerHeading3 = 'Follow Us'
                             </div>
                             
                         </div>
-                        <div class="col-md-2"></div>
+                        <div :class="colmd2"></div>
                     </div>
                 </div>
             </div>
@@ -351,19 +402,19 @@ const footerHeading3 = 'Follow Us'
     <section>
         <div :class="container">
             <div :class="row">
-                <div class="col-md-6"> 
+                <div :class="colmd6"> 
                   <div :style="aboutCard">
                     <h1 :class="heaingFontSize"> {{ download }} </h1>
                     <p>{{ downloadP }}</p>
                     <div class="d-flex">
-                        <img src="./img/google play.png" alt="" :style="maxWidth">
-                        <img src="./img/app store.png" alt="" :style="maxWidth">
+                        <img :src="appImg" alt="" :style="maxWidth">
+                        <img :src="googleimg" alt="" :style="maxWidth">
                     </div>
                   </div>
                   
                 </div>
-                <div class="col-md-6"> 
-                   <div class="text-center">
+                <div :class="colmd6"> 
+                   <div :class="center">
                         <img src="./img/download.png" alt="download">
                    </div>
                 </div>
@@ -373,14 +424,14 @@ const footerHeading3 = 'Follow Us'
     <section>
         <div :class="container">
             <div class="row footerAge">
-                <div class="col-md-2"> 
+                <div :class="colmd2"> 
                     <img src="./img/mobile.png" :style="maxWidth" style=" height: 160px; " alt="">    
                 </div>
                 <div class="col-md-8 "> 
                     <h1>{{ subscribe }}</h1>
                     <p>{{ subscribeP }}</p>
                 </div>
-                <div class="col-md-2"> 
+                <div :class="colmd2"> 
                     <button class="myBtn">get start</button>
                 </div>
             </div>
@@ -497,5 +548,18 @@ const footerHeading3 = 'Follow Us'
     .footerAge{
         padding: 10px 0 10px 0;
     }
+}
+.carosul{
+    background: #efefef45;
+    padding: 10px;
+    margin: 10px 0;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.carosul:hover{
+    background: #ffffff;  
+    box-shadow: 0 1px 2px 0 black;
+    border-right-style: 2px solid rgb(178, 97, 243);
 }
 </style>
