@@ -1,21 +1,26 @@
 <script setup>
-import {countryName} from './data/countryName'
-// console.log(countryName);
+import HelloWorld from './components/HelloWorld.vue';
+// import {countryName} from './data/countryName'
+// // console.log(countryName);
 
-const countriesStartingWithB = countryName.filter((item) =>{
-  const itemcountry = item.country.toLowerCase()
-  return itemcountry.startsWith('b')
-} );
-const countriesStartingWithC = countryName.filter((item) =>{
-  const itemcountry = item.country.toLowerCase()
-  return itemcountry.startsWith('c')
-} );
-//console.log(countriesStartingWithB)
-const divStyle = 'country shadow-md shadow-indigo-400 shadow-black rounded text-center w-80 my-4 py-8'
+// const countriesStartingWithB = countryName.filter((item) =>{
+//   const itemcountry = item.country.toLowerCase()
+//   return itemcountry.startsWith('b')
+// } );
+// const countriesStartingWithC = countryName.filter((item) =>{
+//   const itemcountry = item.country.toLowerCase()
+//   return itemcountry.startsWith('c')
+// } );
+// //console.log(countriesStartingWithB)
+// const divStyle = 'country shadow-md shadow-indigo-400 shadow-black rounded text-center w-80 my-4 py-8'
+
+
+
 
 </script>
 <template>
-  <div class="flex">
+  <HelloWorld/>
+  <!-- <div class="flex">
     <div class="mx-7">
       <h4 class="text-xl my-6 font-bold">Country Name Start => B</h4>
         <div class="bg-lime-100" :class="divStyle" v-for="(country, index) in countriesStartingWithB" :key="index">
@@ -31,5 +36,7 @@ const divStyle = 'country shadow-md shadow-indigo-400 shadow-black rounded text-
         <code>{{ country.city }}</code>
       </div>
     </div>`
-  </div>
+  </div> -->
 </template>
+
+<style scoped></style>
