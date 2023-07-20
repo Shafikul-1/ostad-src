@@ -1,5 +1,5 @@
 <script setup>
-
+const fast = 'welcome'
 </script>
 
 <template>
