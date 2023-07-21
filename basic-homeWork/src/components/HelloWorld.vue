@@ -7,6 +7,7 @@
  import ceo from './ceo.vue';
  import pricing from './pricing.vue'
  import faq from './faq.vue'
+ import faqsec from './faqsec.vue'
  import trial from './trial.vue';
  import footar from './footar.vue'
 
@@ -21,7 +22,10 @@
 <undevtchart/>
 <ceo/>
 <pricing/>
-<faq/>
+<div class="flex">
+    <faq class="w-1/2"/>
+    <faqsec class="w-1/2"/>
+</div>
 <trial/>
 <footar/>
 
