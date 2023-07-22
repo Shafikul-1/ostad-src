@@ -1,7 +1,9 @@
 <script setup>
-  import simpleProject from './components/simple-project.vue'
+  // import simpleProject from './components/simple-project.vue'
+  import lightOnOff from './components/light-on-off.vue'
 </script>
 <template>
-  <simpleProject/>
+  <!-- <simpleProject/> -->
+  <lightOnOff/>
 </template>
 <style scoped></style>
