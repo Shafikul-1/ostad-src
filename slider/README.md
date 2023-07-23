@@ -1,4 +1,4 @@
-# My Fast Create Image Carosul
+# My Fast Create Image carousel
 
 ### Live Link : https://cool-cocada-1d5e72.netlify.app/  
 
