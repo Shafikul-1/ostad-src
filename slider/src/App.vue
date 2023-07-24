@@ -3,7 +3,11 @@ import { ref } from 'vue';
 const currentIndex = ref(0);
 
 function prevImg() {
-  currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;
+  if(currentIndex.value == 0){
+    currentIndex.value = images.length - 1;
+  }else{
+    currentIndex.value--;
+  }
 }
 
 function nextImg() {
